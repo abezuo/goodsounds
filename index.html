@@ -141,8 +141,11 @@ function set_width() {
  
   <br><br><br><br> 
    <p3>coming soon N</p3><br>   
-  <img src="https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/2/red-square-thomas-woolworth.jpg" alt="album cover">
-  </a>
+  <img src="https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/2/red-square-thomas-woolworth.jpg" 
+       alt="album cover"
+       width="300" 
+       height="300"
+       >
       <br>
   <p2>2022</p2>    
       
@@ -150,7 +153,10 @@ function set_width() {
   
    <p3>things continue to happen</p3><br>   
 <a href="https://abezuo.github.io/cont-happen/">
-  <img src="https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/2/red-square-thomas-woolworth.jpg" alt="album cover" class="lhover">
+  <img src="image0.jpeg"
+       width="300" 
+       height="300"
+       alt="album cover" class="lhover" >
   </a>
   
       <br>
@@ -192,8 +198,8 @@ function set_width() {
   src: url(mister_pixel_tools-webfont.woff);
 }
         @font-face {
-  font-family: mixo;
-  src: url(vtf_mixo-webfont.woff);
+  font-family: joystix;
+  src: url(joystix-monospace.woff);
 }
 /* TEXT */
         a {
@@ -225,7 +231,7 @@ body {
         }
 h1 {
 color: yellow;
-font-family: arial;
+font-family: joystix;
 font-size: 75;
 margin: 10px 5px 10px 5px; 
   }
@@ -261,6 +267,20 @@ font-size: 75
 .lhover {
 cursor: url(http://www.rw-designer.com/cursor-view/91846.png), default 
         }
+        
+        
+
+.lhover img{
+transition: 1s ease;
+}
+
+.lhover img:hover{
+-webkit-transform: rotateZ(-10deg);
+-ms-transform: rotateZ(-10deg);
+transform: rotateZ(-10deg);
+transition: 1s ease;
+}
+
         </style>
 </head>
   </body>    
